@@ -9,12 +9,13 @@ import {
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import BooKing from './components/BookIng/BooKing';
-
+import NoMatch from './components/NoMatch/NoMatch';
+import Login from './components/Login/Login';
 
 export const CategoryContext = createContext();
 function App() {
   const [categories, setCategories] = useState("cox'sbazar");
-
+  
   return (
     <div className="app-area">
       <CategoryContext.Provider value={[categories, setCategories]}>
@@ -30,7 +31,12 @@ function App() {
             <Route  path="/booking">
                <BooKing></BooKing>
             </Route>
-            
+            <Route path="/login">
+                <Login></Login>
+            </Route>
+            <Route path="*">
+                <NoMatch></NoMatch>>
+            </Route>
           </Switch>
         </Router>
       </CategoryContext.Provider>

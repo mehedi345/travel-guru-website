@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logo from '../../Logo.png';
 
 
@@ -21,8 +22,10 @@ const Header = () => {
                     <Nav.Link href="#home">Blog</Nav.Link>
                     <Nav.Link href="#home">Contact</Nav.Link>
                 </Nav>
+                <Link to="/login">
+                    <Button variant="warning" >Login</Button>
+                </Link>
                 
-                <Button variant="warning" >Login</Button>
             </Navbar.Collapse>
         </Navbar>
     );
