@@ -1,94 +1,45 @@
-import hotelImage1 from '../../Image/Rectangle 26.png';
-import hotelImage2 from '../../Image/Rectangle 27.png';
-import hotelImage3 from '../../Image/Rectangle 28.png';
-
 const data = [
     {
-        name: "Cox's Bazar",
-        shortDetail: "Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach, and it ...",
-        largeDetail: "Cox’s Bazar is a town on the southeast coast of Bangladesh. It’s known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts. South of town, the tropical rainforest of Himchari National Park has waterfalls and many birds. North, sea turtles breed on nearby Sonadia Island.",
-        lat: 21.426138,
-        long: 91.976158,
-        hotels: [
-            {
-                name: "Hotel The Cox Today",
-                lat: 21.426138,
-                long: 91.976158,
-                image: "https://2.bp.blogspot.com/-mHy4Nz0Z99E/W_lTUE4_I6I/AAAAAAAABF0/yqu8_SY4odM6QDderBn8mnfkejSUBOnwgCLcBGAs/s1600/hotel%2Bcox%2Btoday%2B-%2Bcoxsbazartour.com.jpg",
-                
-            },
-            {
-                name: "Radisson Blu Cox's Bazar",
-                lat: 21.426636,
-                long: 91.975059,
-                image: "https://media-cdn.tripadvisor.com/media/photo-s/1b/7d/3d/96/radisson-blu-chattogram.jpg",
-                
-            },
-            {
-                name: "Seagull Hotel",
-                lat: 21.424790,
-                long: 91.976049,
-                image: "https://lh3.googleusercontent.com/proxy/SOHr0od2FrlAxEcssi7OLLygf8Bki-9VYlfFyax2U6KPkG2VORAtGf3LRO44LZkK179P565hOkL7VTzEEX2Ax6A3fXgCGqchAzPcpP7d-nqxog",
-            }
-        ]
+        id: 1,
+        title: 'Coxs Bazar',
+        description: 'The modern Coxs Bazar derives its name from Captain Hiram Cox, an officer of the British East India Company, a Superintendent of Palongkee outpost.',
+        extra: '252 stays 1k+ guests',
+        imgUrl: 'https://3.bp.blogspot.com/-vgl7OZUili0/VfVWye1UrtI/AAAAAAAAAPg/YiS7cffX_20/s1600/cox.jpg',
+        img1: 'https://tse3.mm.bing.net/th?id=OIP.S2_OukHheubFwTz1IHMwiAHaE8&pid=Api&P=0&w=261&h=175',
+        img2: 'https://tse2.mm.bing.net/th?id=OIP.QfP2S4QVkyGkzkRZW4GxjQHaE8&pid=Api&P=0&w=261&h=175',
+        img3: 'https://tse4.mm.bing.net/th?id=OIP.QwZ65W254FySRsLHF5Z6aAHaE8&pid=Api&P=0&w=261&h=175',
+        p1: 'Stylisht Appartment',
+        p2: 'Appartment in lost Panaroma',
+        p3: 'Ar Lounge and Pool ',
+
     },
     {
-        name: "Sreemangal",
-        shortDetail: "Madhobpur Lake is one of the main tourist attractions in the area, and is home to the Great White-Bellied Heron, the only confirmed site in Bangladesh.",
-        largeDetail: "Madhobpur Lake is one of the main tourist attractions in the area, and is home to the Great White-Bellied Heron, the only confirmed site in Bangladesh. The Baikka beel is also a nearby body of water and home to the Large-billed reed warbler. Sreemangal has been nicknamed the tea capital of Bangladesh, due to the number of tea gardens in the area, and is the place of origin of the Seven Color Tea.",
-        lat: 24.292199,
-        long: 91.738470,
-        hotels: [
-            {
-                name: "Grand Selim Resort & Tour",
-                lat: 24.292199,
-                long: 91.738470,
-                image: "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/44/91/4491386_v1.jpeg",
-            },
-            {
-                name: "Sreemangal Tea Resort and Museum",
-                lat: 24.301596,
-                long: 91.760265,
-                image: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Grand_Sultan_Tea_Resort_%26_Golf_%2839947426244%29.jpg",
+        id: 2,
+        title: 'Sree Mangal',
+        description: 'Standard Single Rooms are designed in open -concept living area and have many facilities.it is very close to Shylet',
+        extra: '2k+ foreigner guests',
+        imgUrl: 'https://tse2.mm.bing.net/th?id=OIP.xt9LVl111D-qVVwTvULK5AHaDQ&pid=Api&P=0&w=378&h=167',
+        img1: 'https://tse2.mm.bing.net/th?id=OIP.ZtNeC93nL1Wcblc-VCKoAAHaFj&pid=Api&P=0&w=219&h=165',
+        img2: 'https://tse1.mm.bing.net/th?id=OIP.7AV_GYp5VC-VRdP8aCJMDwHaE8&pid=Api&P=0&w=266&h=178',
+        img3: 'https://tse4.mm.bing.net/th?id=OIP.z2lO21-eGM02LZq01CoL_gHaE7&pid=Api&P=0&w=247&h=165',
+        p1: 'The Shree Hotel',
+        p2: 'Hotel NewStar',
+        p3: 'Sky Lounge',
 
-            },
-            {
-                name: "Hotel Paradise Sreemangal",
-                lat: 24.321675,
-                long: 91.736304,
-                image: "https://i.ytimg.com/vi/57QyGzzqAYw/maxresdefault.jpg",
-
-            }
-        ]
     },
     {
-        name: "Sundarbans",
-        shortDetail: "The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. It spans from the Hooghly River",
-        largeDetail: "The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. It spans from the Hooghly River in India's state of West Bengal to the Baleswar River in Bangladesh. The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. Confluence of the Ganges.",
-        lat: 22.123000,
-        long: 88.846436,
-        hotels: [
-            {
-                name: "Sunderban Tiger Camp- Wildlife Resort",
-                lat: 22.123000,
-                long: 88.846436,
-                image: "https://www.anandabazar.com//polopoly_fs/1.265112.1450448440!/image/image.jpg_gen/derivatives/landscape_910_607/image.jpg",
+        id: 3,
+        title: 'Sundarban',
+        description: 'The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal.',
+        extra: 'for thriling adventue thousands of people',
+        imgUrl: 'https://i.ibb.co/pwTZFSd/sundorbon.png',
+        img1: 'https://tse3.mm.bing.net/th?id=OIP.4Q1TmlcHdZTpa7D8kk8xNAHaEK&pid=Api&P=0&w=312&h=177',
+        img2: 'https://tse1.mm.bing.net/th?id=OIP.coQZyhedbOKICy9LnEPSoAHaE7&pid=Api&P=0&w=233&h=156',
+        img3: 'https://tse1.mm.bing.net/th?id=OIP.ZaPJUbCIgZLCGGvdUJ-0wgAAAA&pid=Api&P=0&w=292&h=153',
+        p1: 'Hotel Peninsula',
+        p2: 'Radison Blue',
+        p3: 'Agrabad Hotel',
 
-            },
-            {
-                name: "Sundarban Sonar Tari",
-                lat: 22.145021,
-                long: 88.827424,
-                image: "https://media-cdn.tripadvisor.com/media/photo-s/10/de/27/b8/royal-sundarban-wild.jpg",
 
-            },
-            {
-                name: "Sundarban Royal Eco Resort",
-                lat: 22.105031,
-                long: 88.764307,
-                image: "https://cf.bstatic.com/images/hotel/max1024x768/136/136580963.jpg",
-
-            }
-        ]
     }
-]
+];

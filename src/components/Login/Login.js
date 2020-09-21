@@ -200,7 +200,7 @@ const Login = () => {
             <input  type="password" name="password" onBlur={handleBlur} id="" className="form-control" placeholder=" Password" required/>
             <br />
             {newUser && (
-              <input type="password" style={{backgroundColor:'#ffc107', color:'white', padding: '5px', border: 'none' }} name="confirmPassword" onBlur={handleBlur} id="" placeholder="Confirm Password" required/>
+              <input type="password" className='form-control' name="confirmPassword" onBlur={handleBlur} id="" placeholder="Confirm Password" required/>
             )}
             <br />
 

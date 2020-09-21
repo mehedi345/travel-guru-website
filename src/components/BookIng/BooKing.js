@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import {Container, Col, Form, Row, Button } from 'react-bootstrap';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import { CategoryContext } from '../../App';
 
 const BooKing = () => {
+  const { id } = useParams();
   const history = useHistory();
   const [categories, setCategories] = useContext(CategoryContext);
 
@@ -43,7 +44,8 @@ const BooKing = () => {
                 <Form.Label>Destination</Form.Label>
                 <Form.Control type="text" defaultValue={categories} />
               </Form.Group>
-              <input onClick={() => history.push("/search")} type="submit" value="Start Booking" name="" id="start-booking" />
+
+                 <Link to={`/search?id=${id}`}><button type="button" class="btn btn-warning btn-lg">Start Booking</button></Link>
             
             </Form>
           </div>
