@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import {Container, Col, Form, Row, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { CategoryContext } from '../../App';
-
+import Date from '../Date/Date'
 const BooKing = () => {
   const [categories, setCategories] = useContext(CategoryContext);
 
@@ -42,7 +42,7 @@ const BooKing = () => {
                 <Form.Label>Destination</Form.Label>
                 <Form.Control type="text" defaultValue={categories} />
               </Form.Group>
-
+              <Date></Date>
               
               <Link to="/hotelroom">
                 <Button variant="warning" size="lg" block>

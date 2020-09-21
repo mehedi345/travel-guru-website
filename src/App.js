@@ -36,6 +36,7 @@ function App() {
             <Route path="/login">
                 <Login></Login>
             </Route>
+            
             <Route path="*">
                 <NoMatch></NoMatch>>
             </Route>
