@@ -185,14 +185,14 @@ const Login = () => {
               </h4>
             )}
           </div>
-          {newUser ? <h1>Create an account</h1> : <h1>Login</h1>}
+          {newUser ? <h1 style={{color : "white"}}>Create an account</h1> : <h1 style={{ color: "white" }}>Login</h1>}
           <form onSubmit={handleSubmit}>
             {newUser && (
-              <input name="firstname" type="text" onBlur={handleBlur}  placeholder="First Name"/>
+              <input name="firstname" type="text" onBlur={handleBlur} className='form-control'  placeholder="First Name"/>
             )}
             <br />
             {newUser && (
-            <input name="lastname" type="text"  onBlur={handleBlur} placeholder="Last Name"/>
+            <input name="lastname" type="text"  onBlur={handleBlur} className='form-control' placeholder="Last Name"/>
             )}
             <br />
             <input type="email"  name="email" onBlur={handleBlur} className="form-control" placeholder="Email Address" required/>
@@ -200,7 +200,7 @@ const Login = () => {
             <input  type="password" name="password" onBlur={handleBlur} id="" className="form-control" placeholder=" Password" required/>
             <br />
             {newUser && (
-              <input type="password" name="confirmPassword" onBlur={handleBlur} id="" placeholder="Confirm Password" required/>
+              <input type="password" style={{backgroundColor:'#ffc107', color:'white', padding: '5px', border: 'none' }} name="confirmPassword" onBlur={handleBlur} id="" placeholder="Confirm Password" required/>
             )}
             <br />
 
