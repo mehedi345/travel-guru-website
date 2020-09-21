@@ -13,12 +13,14 @@ import NoMatch from './components/NoMatch/NoMatch';
 import Login from './components/Login/Login';
 
 export const CategoryContext = createContext();
+export const UserContext = createContext();
 function App() {
   const [categories, setCategories] = useState("cox'sbazar");
-  
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
     <div className="app-area">
       <CategoryContext.Provider value={[categories, setCategories]}>
+      <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
         <Router>
           <Header></Header>
           <Switch>
@@ -39,6 +41,7 @@ function App() {
             </Route>
           </Switch>
         </Router>
+        </UserContext.Provider>
       </CategoryContext.Provider>
     </div>
 
