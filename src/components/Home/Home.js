@@ -9,16 +9,15 @@ import './Home.css'
 const Home = () => {
     const [categories, setCategories] = useContext(CategoryContext);
     return (
-        <Container className="item mt-5" >
+      <div className='home'>
+          <Container className="item mt-5">
             <Row>
         <Col sm={4} className="item-text">
           <h1>{categories}</h1>
           <p>
             {categories} Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Accusantium minus soluta doloribus id est repellat sapiente cum modi
-            reprehenderit ex a, sit provident, magni sed atque unde
-            labore. Voluptates, ducimus. ex a, sit provident, magni
-            sed atque unde labore. Voluptates, ducimus.
+            reprehenderit.
           </p>
           <Link to="/booking">
             <Button variant="warning">
@@ -43,6 +42,8 @@ const Home = () => {
         </Col>
       </Row>
         </Container>
+      </div>
+        
     );
 };
 

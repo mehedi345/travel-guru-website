@@ -19,10 +19,10 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className=" ml-auto">
-                        <Nav.Link href="#home">News</Nav.Link>
-                        <Nav.Link href="#link">Destination</Nav.Link>
-                        <Nav.Link href="#home">Blog</Nav.Link>
-                        <Nav.Link href="#home">Contact</Nav.Link>
+                        <Nav.Link href="/home">News</Nav.Link>
+                        <Nav.Link href="#destination">Destination</Nav.Link>
+                        <Nav.Link href="#blog">Blog</Nav.Link>
+                        <Nav.Link href="#contact">Contact</Nav.Link>
                     </Nav>
                     <Link to="/login">
                         <Button variant="warning" >Login</Button>

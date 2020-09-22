@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NoMacth = () => {
+const NoMatch = () => {
     return (
         <div>
             <h1>404- Not Found. Error!!</h1>
@@ -8,4 +8,4 @@ const NoMacth = () => {
     );
 };
 
-export default NoMacth;
+export default NoMatch;

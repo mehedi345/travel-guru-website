@@ -11,8 +11,9 @@ import Home from './components/Home/Home';
 import BooKing from './components/BookIng/BooKing';
 import NoMatch from './components/NoMatch/NoMatch';
 import Login from './components/Login/Login';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute'
-import { Search } from '@material-ui/icons';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Search from './components/Search/Search'
+
 
 export const CategoryContext = createContext();
 export const UserContext = createContext();
@@ -24,8 +25,9 @@ function App() {
       <CategoryContext.Provider value={[categories, setCategories]}>
       <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
         <Router>
-          <Header></Header>
+        <Header></Header>
           <Switch>
+          
             <Route path="/home">
               <Home></Home>
             </Route>

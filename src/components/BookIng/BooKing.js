@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import {Container, Col, Form, Row, Button } from 'react-bootstrap';
+import { Container, Col, Form, Row, Button } from 'react-bootstrap';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import { CategoryContext } from '../../App';
 
@@ -10,11 +10,11 @@ const BooKing = () => {
 
   return (
     <Container>
-      <Row className="booking" style={{display: 'flex'}}>
+      <Row className="booking" style={{ display: 'flex' }}>
         <Col sm={6}>
           <div className="tite-context">
-            <h1 style={{color: 'white'}}>{categories}</h1>
-            <p style={{color: "white"}}>
+            <h1 style={{ color: 'white' }}>{categories}</h1>
+            <p style={{ color: "white" }}>
               {categories} to {categories.title}popular belief, Lorem Ipsum is not
               simply random text. It has roots in a piece of classical Latin
               literature from 45 BC, making it over 2000 years old. Richard
@@ -45,8 +45,12 @@ const BooKing = () => {
                 <Form.Control type="text" defaultValue={categories} />
               </Form.Group>
 
-                 <Link to={`/search?id=${id}`}><button type="button" class="btn btn-warning btn-lg">Start Booking</button></Link>
-            
+              <Link to="/search">
+                <Button variant="warning" type="submit" className="form-control">
+                  Start Booking
+                  </Button>
+              </Link>
+
             </Form>
           </div>
         </Col>
